@@ -9,15 +9,6 @@ window.onload = function(){
             content.classList.remove("hidden");
             content.classList.add("efeito-in");
  
-        }, 1000)
+        }, 1500)
     },3000)
-}
- 
-function trocar(cor){
- document.body.style.background=cor;
-}
-
-function trocar(cor){
-    document.body.style.background=cor;
-
 }

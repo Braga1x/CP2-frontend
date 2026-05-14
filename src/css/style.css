@@ -2,6 +2,7 @@
   --header-color: #0A0A0A;
   --bg-main: #1E1E1E;
   --font-color: #fff;
+  --hover-color: #E796A5;
 }
 
 
@@ -12,12 +13,12 @@
 }
 
 body {
-  font-family: 'Jacques Francois', serif;
+  font-family: 'Jacques Francois';
   background-color: var(--bg-main);
   color: var(--font-color);
 }
 
-#inicio{
+#inicio {
     position:fixed;
     top:0;
     left:0;
@@ -25,11 +26,12 @@ body {
     height:100%;
     display:flex;
     flex-direction:column;
-    background:var(--color2);
+    background:var(--bg-main);
     justify-content:center;
     align-items:center;
     opacity:1;
     transition: opcity 1s ease-in-out;
+    color: var(--font-color)
 }
 
 #imgHero{
@@ -49,3 +51,54 @@ body {
     }
 }
 
+#titulo{
+    margin-top: 100px;
+    text-align:center;
+    font-size:3rem;
+    color: var(--font-color);
+    text-transform:uppercase;
+    animation: efeito 1s ease-in-out;
+}
+
+@keyframes efeito {
+    from{
+        opacity:0;
+    }
+    to{
+        opcatity:1;
+        transform:translateY(-10px)
+    }
+}
+
+header {
+  background-color: var(--header-color);
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  gap: 30px;
+}
+
+
+header nav ul {
+  font-size: 32px;
+  padding-left: 264px;
+  list-style:none;
+  display:flex;
+  align-items:center;
+  gap: 150px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color:var(--font-color);
+}
+
+header nav ul li a:hover{
+  color:var(--hover-color);
+}
+
+img {
+  width: 100px;
+  height:100px;
+  border-radius: 50%;
+}
