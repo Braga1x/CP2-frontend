@@ -1,0 +1,51 @@
+:root {
+  --header-color: #0A0A0A;
+  --bg-main: #1E1E1E;
+  --font-color: #fff;
+}
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jacques Francois', serif;
+  background-color: var(--bg-main);
+  color: var(--font-color);
+}
+
+#inicio{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    background:var(--color2);
+    justify-content:center;
+    align-items:center;
+    opacity:1;
+    transition: opcity 1s ease-in-out;
+}
+
+#imgHero{
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    margin-top:20px;
+    animation: rodar 1s ease-in-out;
+}
+
+@keyframes rodar{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg)
+    }
+}
+
