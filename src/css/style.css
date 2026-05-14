@@ -102,3 +102,47 @@ img {
   height:100px;
   border-radius: 50%;
 }
+
+
+.frase {
+  font-size: 48px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.container {
+  margin-top: 44px;
+  display: flex;
+  gap: 225px;
+  align-items: center;
+  justify-content: center;
+  padding: 45px;
+}
+
+.card {
+  border-radius: 30px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  color: #000;
+  padding: 40px;
+  background-color: #fff;
+  width: 442px;
+  height: 383px;
+  font-size: 24px;
+  text-align: center;
+  /* margin-top: 5px; */
+}
+
+.card p {
+  padding: 30px;
+}
+
+.card a {
+  margin: auto;
+  text-decoration: none;
+  background-color: var(--hover-color);
+  padding: 15px;
+  color: #000;
+  border-radius: 40px;
+}
