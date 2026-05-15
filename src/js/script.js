@@ -6,9 +6,6 @@ window.onload = function(){
  
         setTimeout(()=>{
             intro.style.display="none"
-            content.classList.remove("hidden");
-            content.classList.add("efeito-in");
- 
         }, 1500)
     },3000)
 }
