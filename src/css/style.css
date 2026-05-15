@@ -88,13 +88,16 @@ header {
 }
 
 
+header nav {
+  margin-left: auto;
+}
+
 header nav ul {
   font-size: 26px;
-  padding-left: 264px;
   list-style:none;
   display:flex;
   align-items:center;
-  gap: 150px;
+  gap: 48px;
 }
 
 header nav ul li a{
@@ -122,7 +125,7 @@ img {
 .container {
   margin-top: 40px;
   display: flex;
-  gap: 225px;
+  gap: 48px;
   align-items: center;
   justify-content: center;
   padding: 45px;
@@ -159,9 +162,7 @@ img {
 
 footer {
   width: 100%;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
+  margin-top: 64px;
   padding:25px;
   color: #fff;
   font-size: 22px;
