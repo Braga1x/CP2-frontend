@@ -30,7 +30,7 @@ body {
   justify-content:center;
   align-items:center;
   opacity:1;
-  transition: opcity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
   color: var(--font-color)
 }
 
@@ -44,6 +44,11 @@ body {
 
 #fraseHero {
   font-size: 24px;
+}
+
+.efeito-out {
+  opacity: 0;
+  pointer-events: none;
 }
 
 @keyframes rodar{
@@ -69,7 +74,7 @@ body {
         opacity:0;
     }
     to{
-        opcatity:1;
+        opacity:1;
         transform:translateY(-10px)
     }
 }
@@ -83,13 +88,16 @@ header {
 }
 
 
+header nav {
+  margin-left: auto;
+}
+
 header nav ul {
   font-size: 26px;
-  padding-left: 264px;
   list-style:none;
   display:flex;
   align-items:center;
-  gap: 150px;
+  gap: 48px;
 }
 
 header nav ul li a{
@@ -117,7 +125,7 @@ img {
 .container {
   margin-top: 40px;
   display: flex;
-  gap: 225px;
+  gap: 48px;
   align-items: center;
   justify-content: center;
   padding: 45px;
@@ -154,9 +162,7 @@ img {
 
 footer {
   width: 100%;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
+  margin-top: 64px;
   padding:25px;
   color: #fff;
   font-size: 22px;
@@ -227,4 +233,72 @@ h2 {
   text-decoration: none;
   border-radius: 50px;
   align-items: center;
+  border: none;
+  cursor: pointer;
+  font-family: 'Jacques Francois';
+}
+
+@media (max-width: 1024px) {
+  .container {
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .card {
+    width: 320px;
+    height: auto;
+  }
+
+  header nav ul {
+    gap: 32px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+  }
+
+  header {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  header nav ul {
+    gap: 16px;
+    font-size: 18px;
+  }
+
+  #imgHero {
+    width: 280px;
+    height: 280px;
+  }
+
+  #titulo {
+    font-size: 2rem;
+  }
+
+  .frase {
+    font-size: 32px;
+  }
+
+  .sobre-txt {
+    font-size: 22px;
+    margin-top: 32px;
+  }
+
+  footer {
+    font-size: 16px;
+    text-align: center;
+  }
 }
